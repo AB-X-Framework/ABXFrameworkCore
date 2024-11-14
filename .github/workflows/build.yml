@@ -1,0 +1,27 @@
+name: GraalVM Workflow
+
+on:
+  push:
+    
+  pull_request:
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    # Step 1: Checkout the code
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Graalvm
+      uses: graalvm/setup-graalvm@v1.2.6
+      with:
+        java-version:  '21' 
+
+    # Step 3: Verify GraalVM installation
+    - name: Verify GraalVM installation
+      run: |
+        java -version
+
