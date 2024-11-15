@@ -27,7 +27,7 @@ public class StringProcessorTest {
     void stringProcessorTest() throws Exception {
         validateSource("src/test/java/org/abx/core/test/infix/InfixTest.js");
         validateSource("src/test/java/org/abx/core/test/math/ComplexTest.js");
-        validateSource("src/main/resources/org/itcr/msc/thesis/abm/framework/ABMGrid.js");
+        validateSource("src/main/resources/org/abx/core/framework/ABMGrid.js");
     }
 
     @Test
