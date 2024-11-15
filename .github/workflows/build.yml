@@ -26,5 +26,5 @@ jobs:
         java -version
         ls
         pwd
-        mvn -D deploy
+        mvn deploy
 
