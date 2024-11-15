@@ -153,7 +153,7 @@ public class GridJava {
      * @param notSelf
      * @return
      */
-    public ArrayList<Value> vonNewman(int xValue, int yValue, int length, boolean notSelf) {
+    public ArrayList<Value> VonNeuman(int xValue, int yValue, int length, boolean notSelf) {
         ArrayList<Value> results = new ArrayList<>();
         for (int x = -length; x <= length; ++x) {
             int xImpl = x+xValue;
@@ -162,9 +162,9 @@ public class GridJava {
             }
             xImpl = this.validateXImpl(xImpl);
             boolean sameX = xImpl == xValue;
-            int vonNewmanValue = length - (Math.abs(x));
-            int maxValue = yValue + vonNewmanValue;
-            for (int y = yValue - vonNewmanValue; y <= maxValue; ++y) {
+            int VonNeumanValue = length - (Math.abs(x));
+            int maxValue = yValue + VonNeumanValue;
+            for (int y = yValue - VonNeumanValue; y <= maxValue; ++y) {
                 if (checkY(y)) {
                     int yImpl = this.validateYImpl(y);
                     if (notSelf && sameX && yImpl == yValue) {
@@ -193,9 +193,9 @@ public class GridJava {
             }
             xImpl = this.validateXImpl(xImpl);
             boolean sameX = xImpl == xValue;
-            int vonNewmanValue = length - (Math.abs(x));
-            int maxValue = yValue + vonNewmanValue;
-            for (int y = yValue - vonNewmanValue; y <= maxValue; ++y) {
+            int VonNeumanValue = length - (Math.abs(x));
+            int maxValue = yValue + VonNeumanValue;
+            for (int y = yValue - VonNeumanValue; y <= maxValue; ++y) {
                 if (checkY(y)) {
                     int yImpl = this.validateYImpl(y);
                     if (notSelf && sameX && yImpl == yValue) {

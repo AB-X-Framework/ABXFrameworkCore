@@ -28,15 +28,15 @@ public class NeighborsTest {
      * @throws Exception
      */
     @Test
-    void vonNewmanTest() throws Exception {
+    void VonNeumanTest() throws Exception {
         ABMFrameworkCore abmFrameworkCore = new ABMFrameworkCore(OptimizationLevel.standard);
         abmFrameworkCore.processFile(
-                "src/test/java/org/abx/core/test/neighbors/VonNewman.js");
+                "src/test/java/org/abx/core/test/neighbors/VonNeuman.js");
 
         abmFrameworkCore = new ABMFrameworkCore(OptimizationLevel.performance);
         abmFrameworkCore.addListener(new ConsoleABMListener());
         abmFrameworkCore.processFile(
-                "src/test/java/org/abx/core/test/neighbors/VonNewman.js");
+                "src/test/java/org/abx/core/test/neighbors/VonNeuman.js");
     }
 
     /**

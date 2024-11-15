@@ -13,38 +13,38 @@ class MooreEnv extends ABMEnv {
         this.max = specs.max;
     }
 
-    jsVonNewman() {
+    jsVonNeuman() {
         // This example self indicate if moore should choose self
-        const moore = this.chosenOne.jsVonNewman(450, true);
+        const moore = this.chosenOne.jsVonNeuman(450, true);
         for (const patch of moore) {
             patch.color = this.green;
         }
         return moore.length;
     }
 
-    vonNewman() {
+    VonNeuman() {
         // This example self indicate if moore should choose self
-        const moore = this.chosenOne.vonNewman(450, true);
+        const moore = this.chosenOne.VonNeuman(450, true);
         for (const patch of moore) {
             patch.color = this.green;
         }
         return moore.length;
     }
 
-    eachVonNewman() {
+    eachVonNeuman() {
         // This example self indicate if moore should choose self
         let count = 0;
-        this.chosenOne.eachVonNewman(450, (patch) => {
+        this.chosenOne.eachVonNeuman(450, (patch) => {
             patch.color = this.green;
             ++count;
         }, true);
         return count;
     }
 
-    jsEachVonNewman() {
+    jsEachVonNeuman() {
         // This example self indicate if moore should choose self
         let count = 0;
-        this.chosenOne.jsEachVonNewman(450, (patch) => {
+        this.chosenOne.jsEachVonNeuman(450, (patch) => {
             patch.color = this.green;
             ++count;
         }, true);
@@ -52,20 +52,20 @@ class MooreEnv extends ABMEnv {
     }
 }
 
-const vonNewmanEnv = new MooreEnv().setupEnv({w: 1000, h: 1000, gridType: 'torus'});
+const VonNeumanEnv = new MooreEnv().setupEnv({w: 1000, h: 1000, gridType: 'torus'});
 
 tick();
-let baseline = vonNewmanEnv.eachVonNewman();
-println("eachVonNewman "+tick()+" "+baseline);
+let baseline = VonNeumanEnv.eachVonNeuman();
+println("eachVonNeuman "+tick()+" "+baseline);
 
-let count = vonNewmanEnv.vonNewman();
+let count = VonNeumanEnv.VonNeuman();
 Assertions.assertEquals(baseline,count);
-println("vonNewman "+tick()+" "+count);
+println("VonNeuman "+tick()+" "+count);
 
-count = vonNewmanEnv.jsEachVonNewman();
+count = VonNeumanEnv.jsEachVonNeuman();
 Assertions.assertEquals(baseline,count);
-println("jsEachVonNewman"+tick()+" "+count);
+println("jsEachVonNeuman"+tick()+" "+count);
 
-count = vonNewmanEnv.jsVonNewman();
+count = VonNeumanEnv.jsVonNeuman();
 Assertions.assertEquals(baseline,count);
-println("jsVonNewman"+tick()+" "+count);
+println("jsVonNeuman"+tick()+" "+count);
