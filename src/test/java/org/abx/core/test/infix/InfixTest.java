@@ -1,8 +1,9 @@
 package org.abx.core.test.infix;
 
 
-import org.itcr.msc.thesis.abm.ABMFrameworkCore;
-import org.itcr.msc.thesis.abm.syntax.OptimizationLevel;
+
+import org.abx.core.ABMFrameworkCore;
+import org.abx.core.syntax.OptimizationLevel;
 import org.junit.jupiter.api.Test;
 
 public class InfixTest {

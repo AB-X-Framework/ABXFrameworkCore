@@ -1,6 +1,6 @@
 package org.abx.core.test.img;
 
-import org.itcr.msc.thesis.abm.img.ImgClient;
+import org.abx.core.img.ImgClient;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
