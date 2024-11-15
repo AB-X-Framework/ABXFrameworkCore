@@ -1,8 +1,8 @@
 package org.abx.core.test.movement;
 
-import org.itcr.msc.thesis.abm.ABMFrameworkCore;
-import org.itcr.msc.thesis.abm.ConsoleABMListener;
-import org.itcr.msc.thesis.abm.syntax.OptimizationLevel;
+import org.abx.core.ABMFrameworkCore;
+import org.abx.core.ConsoleABMListener;
+import org.abx.core.syntax.OptimizationLevel;
 import org.junit.jupiter.api.Test;
 
 public class MovementTest {
