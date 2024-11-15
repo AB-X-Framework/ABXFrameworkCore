@@ -7,9 +7,7 @@ package org.abx.core.data;
  */
 
 
-import org.itcr.msc.thesis.abm.math.MersenneTwisterFast;
-
-import java.util.Random;
+import org.abx.core.math.MersenneTwisterFast;
 
 /**
  *
