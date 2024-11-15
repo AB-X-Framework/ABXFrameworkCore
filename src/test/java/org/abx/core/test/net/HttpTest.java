@@ -10,6 +10,6 @@ public class HttpTest {
     void HttpTest() throws Exception {
         new ABMFrameworkCore(OptimizationLevel.standard).
                 addListener(new ConsoleABMListener()).processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/net/Http Test.js");
+                "src/test/java/org/abx/core/test/net/Http Test.js");
     }
 }

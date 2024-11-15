@@ -11,18 +11,18 @@
      void testNearInRadius() throws Exception {
          new ABMFrameworkCore(OptimizationLevel.standard).
                  addListener(new ConsoleABMListener()).processFile(
-                 "src/test/java/org/itcr/msc/thesis/abm/test/near/NearTest.js");
+                 "src/test/java/org/abx/core/test/near/NearTest.js");
      }
 
      @Test
      void inRadius() throws Exception {
          new ABMFrameworkCore(OptimizationLevel.standard).
                 processFile(
-                         "src/test/java/org/itcr/msc/thesis/abm/test/near/InRadius.js");
+                         "src/test/java/org/abx/core/test/near/InRadius.js");
 
 
          new ABMFrameworkCore(OptimizationLevel.performance).
                  addListener(new ConsoleABMListener()).processFile(
-                         "src/test/java/org/itcr/msc/thesis/abm/test/near/InRadius.js");
+                         "src/test/java/org/abx/core/test/near/InRadius.js");
      }
  }

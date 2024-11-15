@@ -11,7 +11,7 @@ public class SetTest {
     @Test
     void setText() throws Exception {
         new ABMFrameworkCore(OptimizationLevel.standard).addListener(new ConsoleABMListener()).
-                processFile( "src/test/java/org/itcr/msc/thesis/abm/test/set/Set.js");
+                processFile( "src/test/java/org/abx/core/test/set/Set.js");
     }
 
 

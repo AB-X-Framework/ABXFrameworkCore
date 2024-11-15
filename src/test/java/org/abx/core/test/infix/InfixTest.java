@@ -11,6 +11,6 @@ public class InfixTest {
     @Test
     void infixTest() throws Exception {
         new ABMFrameworkCore(OptimizationLevel.debug).processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/infix/InfixTest.js");
+                "src/test/java/org/abx/core/test/infix/InfixTest.js");
     }
 }

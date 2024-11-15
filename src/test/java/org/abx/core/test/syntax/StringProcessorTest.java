@@ -25,15 +25,15 @@ public class StringProcessorTest {
 
     @Test
     void stringProcessorTest() throws Exception {
-        validateSource("src/test/java/org/itcr/msc/thesis/abm/test/infix/InfixTest.js");
-        validateSource("src/test/java/org/itcr/msc/thesis/abm/test/math/ComplexTest.js");
+        validateSource("src/test/java/org/abx/core/test/infix/InfixTest.js");
+        validateSource("src/test/java/org/abx/core/test/math/ComplexTest.js");
         validateSource("src/main/resources/org/itcr/msc/thesis/abm/framework/ABMGrid.js");
     }
 
     @Test
     void testWithEqual()throws Exception {
         System.out.println(SyntaxUtil.preprocess(StreamUtils.readStream(new FileInputStream(
-                "src/test/java/org/itcr/msc/thesis/abm/test/syntax/WithEqual.js")
+                "src/test/java/org/abx/core/test/syntax/WithEqual.js")
 
         ), OptimizationLevel.standard));
     }

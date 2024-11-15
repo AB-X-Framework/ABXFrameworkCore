@@ -9,6 +9,6 @@ public class ComplexTest {
     @Test
     void complexTest() throws Exception {
         new ABMFrameworkCore(OptimizationLevel.standard).processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/math/ComplexTest.js");
+                "src/test/java/org/abx/core/test/math/ComplexTest.js");
     }
 }

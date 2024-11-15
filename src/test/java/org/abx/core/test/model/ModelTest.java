@@ -8,7 +8,7 @@ public class ModelTest {
     @Test
     void modelTest() throws Exception {
         new ABMFrameworkCore(OptimizationLevel.standard).processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/model/ModelTest.js");
+                "src/test/java/org/abx/core/test/model/ModelTest.js");
     }
 
 

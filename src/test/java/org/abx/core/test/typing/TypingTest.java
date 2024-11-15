@@ -11,14 +11,14 @@ public class TypingTest {
     void typingTest() throws Exception {
         new ABMFrameworkCore(OptimizationLevel.standard).
                 addListener(new ConsoleABMListener()).processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/typing/TypingTest.js");
+                "src/test/java/org/abx/core/test/typing/TypingTest.js");
 
     }
 
     @Test
     void typingTest2() throws Exception {
         new ABMFrameworkCore(OptimizationLevel.standard).processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/typing/TypingTest2.js");
+                "src/test/java/org/abx/core/test/typing/TypingTest2.js");
 
     }
 
@@ -27,7 +27,7 @@ public class TypingTest {
         Exception expected = null;
         try {
             new ABMFrameworkCore(OptimizationLevel.standard).processFile(
-                    "src/test/java/org/itcr/msc/thesis/abm/test/typing/BrokenTypingTest.js");
+                    "src/test/java/org/abx/core/test/typing/BrokenTypingTest.js");
         } catch (Exception e) {
             expected = e;
         }
@@ -42,7 +42,7 @@ public class TypingTest {
         Exception expected = null;
         try {
             new ABMFrameworkCore(OptimizationLevel.standard).processFile(
-                    "src/test/java/org/itcr/msc/thesis/abm/test/typing/BrokenOutputType.js");
+                    "src/test/java/org/abx/core/test/typing/BrokenOutputType.js");
         } catch (Exception e) {
             expected = e;
         }
@@ -55,7 +55,7 @@ public class TypingTest {
         Exception expected = null;
         try {
             new ABMFrameworkCore(OptimizationLevel.standard).processFile(
-                    "src/test/java/org/itcr/msc/thesis/abm/test/typing/BrokenOutputType2.js");
+                    "src/test/java/org/abx/core/test/typing/BrokenOutputType2.js");
         } catch (Exception e) {
             expected = e;
         }
@@ -69,7 +69,7 @@ public class TypingTest {
         Exception expected = null;
         try {
             new ABMFrameworkCore(OptimizationLevel.standard).processFile(
-                    "src/test/java/org/itcr/msc/thesis/abm/test/typing/BrokenOutputType3.js");
+                    "src/test/java/org/abx/core/test/typing/BrokenOutputType3.js");
         } catch (Exception e) {
             expected = e;
         }
@@ -81,7 +81,7 @@ public class TypingTest {
     @Test
     void subClass() throws Exception {
         new ABMFrameworkCore(OptimizationLevel.standard).processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/typing/Subclass.js");
+                "src/test/java/org/abx/core/test/typing/Subclass.js");
 
     }
 
@@ -90,7 +90,7 @@ public class TypingTest {
         Exception expected = null;
         try {
             new ABMFrameworkCore(OptimizationLevel.standard).processFile(
-                    "src/test/java/org/itcr/msc/thesis/abm/test/typing/BrokenOutputType4.js");
+                    "src/test/java/org/abx/core/test/typing/BrokenOutputType4.js");
         } catch (Exception e) {
             expected = e;
         }

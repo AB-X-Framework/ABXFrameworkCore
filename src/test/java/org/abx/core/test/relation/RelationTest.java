@@ -10,6 +10,6 @@ public class RelationTest {
     void relationsTest() throws Exception {
         new ABMFrameworkCore(OptimizationLevel.standard).addListener(new ConsoleABMListener()).
                 processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/relation/Relations.js");
+                "src/test/java/org/abx/core/test/relation/Relations.js");
     }
 }

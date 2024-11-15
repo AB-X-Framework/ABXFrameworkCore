@@ -10,7 +10,7 @@ public class ParetoTest {
     public void test() throws Exception {
         ABMFrameworkCore abmFrameworkCore = new ABMFrameworkCore(OptimizationLevel.performance);
         abmFrameworkCore.processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/pareto/AllExecs.js");
+                "src/test/java/org/abx/core/test/pareto/AllExecs.js");
 
     }
 }

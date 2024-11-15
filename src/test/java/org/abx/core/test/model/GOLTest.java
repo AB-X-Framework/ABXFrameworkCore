@@ -9,6 +9,7 @@
      @Test
      void modelTest3() throws Exception {
          new ABMFrameworkCore(OptimizationLevel.standard).processFile(
-                 "src/test/java/org/itcr/msc/thesis/abm/test/model/GameOfLife.js");
+                                     "src/test/java/org/abx/core/test/model/GameOfLife.js");
+
      }
  }

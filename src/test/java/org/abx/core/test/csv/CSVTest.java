@@ -11,6 +11,6 @@ void csvTest() throws Exception {
     ABMFrameworkCore abmFrameworkCore = new ABMFrameworkCore(OptimizationLevel.standard);
     abmFrameworkCore.addListener(new ConsoleABMListener());
     abmFrameworkCore.processFile(
-            "src/test/java/org/itcr/msc/thesis/abm/test/csv/CSVTest.js");
+            "src/test/java/org/abx/core/test/csv/CSVTest.js");
 }
 }

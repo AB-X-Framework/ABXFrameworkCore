@@ -12,6 +12,6 @@ import org.junit.jupiter.api.Test;
          ABMFrameworkCore core = new ABMFrameworkCore(OptimizationLevel.standard);
          core.addListener(new ConsoleABMListener());
          core.processFile(
-                 "src/test/java/org/itcr/msc/thesis/abm/test/model/NeighborhoodTest.js");
+                 "src/test/java/org/abx/core/test/model/NeighborhoodTest.js");
      }
  }

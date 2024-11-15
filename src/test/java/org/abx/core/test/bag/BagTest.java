@@ -12,6 +12,6 @@ public class BagTest {
         ABMFrameworkCore abmFrameworkCore = new ABMFrameworkCore(OptimizationLevel.standard);
         abmFrameworkCore.addListener(new ConsoleABMListener());
         abmFrameworkCore.processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/bag/Bag.js");
+                "src/test/java/org/abx/core/test/bag/Bag.js");
     }
 }

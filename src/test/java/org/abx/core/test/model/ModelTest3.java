@@ -9,6 +9,6 @@
      @Test
      void modelTest3() throws Exception {
          new ABMFrameworkCore(OptimizationLevel.standard).processFile(
-                 "src/test/java/org/itcr/msc/thesis/abm/test/model/ModelTest3.js");
+                 "src/test/java/org/abx/core/test/model/ModelTest3.js");
      }
  }

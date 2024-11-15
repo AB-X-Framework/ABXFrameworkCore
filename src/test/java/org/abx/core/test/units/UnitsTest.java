@@ -9,12 +9,12 @@ public class UnitsTest {
     @Test
     void unitsTest() throws Exception {
         new ABMFrameworkCore(OptimizationLevel.standard).addListener(new ConsoleABMListener()).processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/units/UnitsTest.js");
+                "src/test/java/org/abx/core/test/units/UnitsTest.js");
     }
 
     @Test
     void globalUnitsTest() throws Exception {
         new ABMFrameworkCore(OptimizationLevel.standard).processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/units/GlobalUnitsTest.js");
+                "src/test/java/org/abx/core/test/units/GlobalUnitsTest.js");
     }
 }

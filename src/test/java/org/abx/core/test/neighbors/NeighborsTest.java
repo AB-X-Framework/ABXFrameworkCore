@@ -14,13 +14,13 @@ public class NeighborsTest {
     void mooreTest() throws Exception {
         ABMFrameworkCore abmFrameworkCore = new ABMFrameworkCore(OptimizationLevel.standard);
         abmFrameworkCore.processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/neighbors/Moore.js");
+                "src/test/java/org/abx/core/test/neighbors/Moore.js");
 
 
         abmFrameworkCore = new ABMFrameworkCore(OptimizationLevel.performance);
         abmFrameworkCore.addListener(new ConsoleABMListener());
         abmFrameworkCore.processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/neighbors/Moore.js");
+                "src/test/java/org/abx/core/test/neighbors/Moore.js");
     }
 
     /**
@@ -31,12 +31,12 @@ public class NeighborsTest {
     void vonNewmanTest() throws Exception {
         ABMFrameworkCore abmFrameworkCore = new ABMFrameworkCore(OptimizationLevel.standard);
         abmFrameworkCore.processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/neighbors/VonNewman.js");
+                "src/test/java/org/abx/core/test/neighbors/VonNewman.js");
 
         abmFrameworkCore = new ABMFrameworkCore(OptimizationLevel.performance);
         abmFrameworkCore.addListener(new ConsoleABMListener());
         abmFrameworkCore.processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/neighbors/VonNewman.js");
+                "src/test/java/org/abx/core/test/neighbors/VonNewman.js");
     }
 
     /**
@@ -47,12 +47,12 @@ public class NeighborsTest {
     void patchesTest() throws Exception {
         ABMFrameworkCore abmFrameworkCore = new ABMFrameworkCore(OptimizationLevel.standard);
         abmFrameworkCore.processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/neighbors/Patches.js");
+                "src/test/java/org/abx/core/test/neighbors/Patches.js");
 
         abmFrameworkCore = new ABMFrameworkCore(OptimizationLevel.performance);
         abmFrameworkCore.addListener(new ConsoleABMListener());
         abmFrameworkCore.processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/neighbors/Patches.js");
+                "src/test/java/org/abx/core/test/neighbors/Patches.js");
     }
 
     /**
@@ -63,12 +63,12 @@ public class NeighborsTest {
     void mooreEdgeTest() throws Exception {
         ABMFrameworkCore abmFrameworkCore = new ABMFrameworkCore(OptimizationLevel.standard);
         abmFrameworkCore.processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/neighbors/MooreEdge.js");
+                "src/test/java/org/abx/core/test/neighbors/MooreEdge.js");
 
         abmFrameworkCore = new ABMFrameworkCore(OptimizationLevel.performance);
         abmFrameworkCore.addListener(new ConsoleABMListener());
         abmFrameworkCore.processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/neighbors/MooreEdge.js");
+                "src/test/java/org/abx/core/test/neighbors/MooreEdge.js");
     }
 
 }

@@ -12,6 +12,6 @@ public class ListTest {
         ABMFrameworkCore abmFrameworkCore = new ABMFrameworkCore(OptimizationLevel.standard);
         abmFrameworkCore.addListener(new ConsoleABMListener());
         abmFrameworkCore.processFile(
-                "src/test/java/org/itcr/msc/thesis/abm/test/list/ListTest.js");
+                "src/test/java/org/abx/core/test/list/ListTest.js");
     }
 }
