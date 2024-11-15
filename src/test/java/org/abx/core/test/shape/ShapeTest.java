@@ -1,6 +1,6 @@
 package org.abx.core.test.shape;
 
-import org.itcr.msc.thesis.abm.img.SpriteManager;
+import org.abx.core.img.SpriteManager;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

@@ -1,11 +1,11 @@
 package org.abx.core.test.syntax;
 
-import org.itcr.msc.thesis.abm.ABMFrameworkCore;
-import org.itcr.msc.thesis.abm.ConsoleABMListener;
-import org.itcr.msc.thesis.abm.syntax.OptimizationLevel;
-import org.itcr.msc.thesis.abm.syntax.StringProcessor;
-import org.itcr.msc.thesis.abm.syntax.SyntaxUtil;
-import org.itcr.msc.thesis.abm.utils.StreamUtils;
+import org.abx.core.ABMFrameworkCore;
+import org.abx.core.ConsoleABMListener;
+import org.abx.core.syntax.OptimizationLevel;
+import org.abx.core.syntax.StringProcessor;
+import org.abx.core.syntax.SyntaxUtil;
+import org.abx.core.utils.StreamUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

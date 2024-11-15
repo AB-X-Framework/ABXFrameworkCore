@@ -2,6 +2,7 @@ package org.abx.core.test.list;
 
 
 import org.abx.core.ABMFrameworkCore;
+import org.abx.core.ConsoleABMListener;
 import org.abx.core.syntax.OptimizationLevel;
 import org.junit.jupiter.api.Test;
 
