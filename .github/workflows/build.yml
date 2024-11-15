@@ -18,7 +18,7 @@ jobs:
     - name: Graalvm
       uses: graalvm/setup-graalvm@v1.2.6
       with:
-        java-version:  '21' 
+        java-version:  '21.0.2' 
 
     # Step 3: Verify GraalVM installation
     - name: Verify GraalVM installation
