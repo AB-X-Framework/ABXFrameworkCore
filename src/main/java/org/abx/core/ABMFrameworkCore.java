@@ -10,6 +10,8 @@ import org.abx.core.math.MersenneTwisterFast;
 import org.abx.core.net.ABMHttpClient;
 import org.abx.core.set.SetUtils;
 import org.abx.core.syntax.OptimizationLevel;
+import org.abx.core.syntax.SyntaxUtil;
+import org.abx.core.utils.StreamUtils;
 import org.graalvm.polyglot.Context;
 import org.graalvm.polyglot.Source;
 import org.graalvm.polyglot.Value;

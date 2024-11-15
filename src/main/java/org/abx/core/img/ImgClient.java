@@ -1,7 +1,8 @@
 package org.abx.core.img;
 
-import org.itcr.msc.thesis.abm.set.SetJava;
-import org.itcr.msc.thesis.abm.utils.ExceptionHandler;
+
+import org.abx.core.set.SetJava;
+import org.abx.core.utils.ExceptionHandler;
 import org.json.JSONArray;
 
 import javax.imageio.ImageIO;

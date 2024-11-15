@@ -5,7 +5,8 @@ import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
-import static org.itcr.msc.thesis.abm.img.SpriteManager.AntiAliasing;
+import static org.abx.core.img.SpriteManager.AntiAliasing;
+
 
 public class SpritesData {
     public static final double fullCircle = 360;

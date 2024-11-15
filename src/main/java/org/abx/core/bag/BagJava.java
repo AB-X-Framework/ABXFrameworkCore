@@ -1,6 +1,7 @@
 package org.abx.core.bag;
 
-import org.itcr.msc.thesis.abm.set.SetJava;
+
+import org.abx.core.set.SetJava;
 
 import java.util.HashMap;
 import java.util.Map;
