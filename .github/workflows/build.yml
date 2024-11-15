@@ -24,5 +24,7 @@ jobs:
     - name: Verify GraalVM installation
       run: |
         java -version
+        ls
+        pwd
         mvn -D deploy
 
