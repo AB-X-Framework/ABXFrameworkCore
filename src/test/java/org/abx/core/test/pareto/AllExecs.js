@@ -2,7 +2,7 @@ include("{script}/ParetoEnv.js");
 
 for (let i = 0; i < 1;++i){
     const env = new ParetoEnv();
-    env.setupEnv( {w: 101, h: 101, players:100});
+    env.setupEnv( {w: 10, h: 10, players:100});
     while (env.envStep()) {
         //One step     
     }
