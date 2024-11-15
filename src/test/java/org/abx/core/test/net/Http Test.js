@@ -1,5 +1,5 @@
 //MY CODE 23423452352345423
-function x(y:Boolean){}
+function x(y:String){}
 
 x("hi")
 
@@ -21,7 +21,7 @@ req.addPart("MultipartString", randomString);
 const randomString2 = "MultipartValue2" + randomId;
 req.addBytes("MultipartData", getBytes(randomString2), "bytes.dat", "multipart/form-data");
 req.addStream("MultipartData2",
-    streamFile("src/test/java/org/itcr/msc/thesis/abm/test/net/Http Test.js"),
+    streamFile("src/test/java/org/abx/core/test/net/Http Test.js"),
         "Http Test.js", "text/javascript");
 content = client.process(req).asString();
 Assertions.assertContainsText(content, "MultipartString");
