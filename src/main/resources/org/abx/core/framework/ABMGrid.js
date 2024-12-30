@@ -549,8 +549,8 @@ class ABMGrid {
      * @param notSelf
      * @returns {[]|*}
      */
-    eachVonNeuman(x: Number, y: Number, length: Number, notSelf: Boolean, fx: Function): void {
-        this.patchesMatrix.eachVonNeuman(x, y, length, notSelf, fx);
+    eachVonNeumann(x: Number, y: Number, length: Number, notSelf: Boolean, fx: Function): void {
+        this.patchesMatrix.eachVonNeumann(x, y, length, notSelf, fx);
     }
 
     /**

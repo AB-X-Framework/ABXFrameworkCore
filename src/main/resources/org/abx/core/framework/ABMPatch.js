@@ -301,7 +301,7 @@ class ABMPatch extends ABMEntity {
         if (length !== Math.floor(length)) {
             throw "Moore can only be calculated with Integers";
         }
-        return this.grid.VonNeuman(this.xValue, this.yValue, length, !self);
+        return this.grid.VonNeumann(this.xValue, this.yValue, length, !self);
     }
     /**
      * Return the Von Newman neighborhood
@@ -309,7 +309,7 @@ class ABMPatch extends ABMEntity {
      * @param self
      * @returns {[]}
      */
-    eachVonNeuman(length: Number, fx:Function, self?: Boolean):void {
+    eachVonNeumann(length: Number, fx:Function, self?: Boolean):void {
         if (length !== Math.floor(length)) {
             throw "Moore can only be calculated with Integers";
         }
