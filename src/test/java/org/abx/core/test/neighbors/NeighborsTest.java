@@ -31,12 +31,12 @@ public class NeighborsTest {
     void VonNeumannTest() throws Exception {
         ABMFrameworkCore abmFrameworkCore = new ABMFrameworkCore(OptimizationLevel.standard);
         abmFrameworkCore.processFile(
-                "src/test/java/org/abx/core/test/neighbors/VonNeuman.js");
+                "src/test/java/org/abx/core/test/neighbors/VonNeumann.js");
 
         abmFrameworkCore = new ABMFrameworkCore(OptimizationLevel.performance);
         abmFrameworkCore.addListener(new ConsoleABMListener());
         abmFrameworkCore.processFile(
-                "src/test/java/org/abx/core/test/neighbors/VonNeuman.js");
+                "src/test/java/org/abx/core/test/neighbors/VonNeumann.js");
     }
 
     /**

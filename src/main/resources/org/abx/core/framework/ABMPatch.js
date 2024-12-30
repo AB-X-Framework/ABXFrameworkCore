@@ -353,14 +353,14 @@ class ABMPatch extends ABMEntity {
      * @param self
      * @returns {[]}
      */
-    jsEachVonNeuman(length: Number, fx: Function, self?: Boolean):void{
+    jsEachVonNeumann(length: Number, fx: Function, self?: Boolean):void{
         if (length !== Math.floor(length)) {
             throw "Von Newman can only be calculated with Integers";
         }
         const notSelf = !self;
         for (let x = -length; x <= length; ++x) {
-            const VonNeumanValue = length - (Math.abs(x));
-            for (let y = -VonNeumanValue; y <= VonNeumanValue; ++y) {
+            const VonNeumannValue = length - (Math.abs(x));
+            for (let y = -VonNeumannValue; y <= VonNeumannValue; ++y) {
                 if (this.grid.checkXY(this.xValue + x, this.yValue + y)) {
                     const [xImpl, yImpl] = this.grid.validateXY(this.xValue + x, this.yValue + y);
                     const patchToAdd = this.grid.patchAtImpl(xImpl, yImpl);
