@@ -28,7 +28,7 @@ public class NeighborsTest {
      * @throws Exception
      */
     @Test
-    void VonNeumanTest() throws Exception {
+    void VonNeumannTest() throws Exception {
         ABMFrameworkCore abmFrameworkCore = new ABMFrameworkCore(OptimizationLevel.standard);
         abmFrameworkCore.processFile(
                 "src/test/java/org/abx/core/test/neighbors/VonNeuman.js");

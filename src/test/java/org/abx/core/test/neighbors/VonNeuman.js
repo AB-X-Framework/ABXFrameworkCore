@@ -13,28 +13,28 @@ class MooreEnv extends ABMEnv {
         this.max = specs.max;
     }
 
-    jsVonNeuman() {
+    jsVonNeumann() {
         // This example self indicate if moore should choose self
-        const moore = this.chosenOne.jsVonNeuman(450, true);
+        const moore = this.chosenOne.jsVonNeumann(450, true);
         for (const patch of moore) {
             patch.color = this.green;
         }
         return moore.length;
     }
 
-    VonNeuman() {
+    VonNeumann() {
         // This example self indicate if moore should choose self
-        const moore = this.chosenOne.VonNeuman(450, true);
+        const moore = this.chosenOne.VonNeumann(450, true);
         for (const patch of moore) {
             patch.color = this.green;
         }
         return moore.length;
     }
 
-    eachVonNeuman() {
+    eachVonNeumann() {
         // This example self indicate if moore should choose self
         let count = 0;
-        this.chosenOne.eachVonNeuman(450, (patch) => {
+        this.chosenOne.eachVonNeumann(450, (patch) => {
             patch.color = this.green;
             ++count;
         }, true);
@@ -44,7 +44,7 @@ class MooreEnv extends ABMEnv {
     jsEachVonNeuman() {
         // This example self indicate if moore should choose self
         let count = 0;
-        this.chosenOne.jsEachVonNeuman(450, (patch) => {
+        this.chosenOne.jsEachVonNeumann(450, (patch) => {
             patch.color = this.green;
             ++count;
         }, true);

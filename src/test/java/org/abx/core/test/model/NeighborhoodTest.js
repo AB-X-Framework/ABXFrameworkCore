@@ -54,17 +54,17 @@ class NeighborhoodEnv extends ABMEnv {
             }
             case 6:{
                 this.patches().each((patch:NeighborhoodPatch)=>patch.alive=false)
-                arrayToSet(this.patch.VonNeuman(1)).each((patch:NeighborhoodPatch)=>patch.alive=true);
+                arrayToSet(this.patch.VonNeumann(1)).each((patch:NeighborhoodPatch)=>patch.alive=true);
                 break;
             }
             case 7:{
                 this.patches().each((patch:NeighborhoodPatch)=>patch.alive=false)
-                arrayToSet(this.patch.VonNeuman(2)).each((patch:NeighborhoodPatch)=>patch.alive=true);
+                arrayToSet(this.patch.VonNeumann(2)).each((patch:NeighborhoodPatch)=>patch.alive=true);
                 break;
             }
             case 8:{
                 this.patches().each((patch:NeighborhoodPatch)=>patch.alive=false)
-                arrayToSet(this.patch.VonNeuman(3)).each((patch:NeighborhoodPatch)=>patch.alive=true);
+                arrayToSet(this.patch.VonNeumann(3)).each((patch:NeighborhoodPatch)=>patch.alive=true);
                 break;
             }
             default: {
