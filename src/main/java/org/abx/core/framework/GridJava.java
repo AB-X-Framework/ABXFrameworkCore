@@ -193,9 +193,9 @@ public class GridJava {
             }
             xImpl = this.validateXImpl(xImpl);
             boolean sameX = xImpl == xValue;
-            int VonNeumanValue = length - (Math.abs(x));
-            int maxValue = yValue + VonNeumanValue;
-            for (int y = yValue - VonNeumanValue; y <= maxValue; ++y) {
+            int VonNeumannValue = length - (Math.abs(x));
+            int maxValue = yValue + VonNeumannValue;
+            for (int y = yValue - VonNeumannValue; y <= maxValue; ++y) {
                 if (checkY(y)) {
                     int yImpl = this.validateYImpl(y);
                     if (notSelf && sameX && yImpl == yValue) {

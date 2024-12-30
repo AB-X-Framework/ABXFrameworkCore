@@ -536,8 +536,8 @@ class ABMGrid {
      * @param notSelf
      * @returns {[]|*}
      */
-    VonNeuman(x: Number, y: Number, length: Number, notSelf: Boolean) {
-        return this.patchesMatrix.VonNeuman(x, y, length, notSelf);
+    VonNeumann(x: Number, y: Number, length: Number, notSelf: Boolean) {
+        return this.patchesMatrix.VonNeumann(x, y, length, notSelf);
     }
 
 

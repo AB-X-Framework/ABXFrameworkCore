@@ -41,7 +41,7 @@ class MooreEnv extends ABMEnv {
         return count;
     }
 
-    jsEachVonNeuman() {
+    jsEachVonNeumann() {
         // This example self indicate if moore should choose self
         let count = 0;
         this.chosenOne.jsEachVonNeumann(450, (patch) => {
@@ -52,20 +52,20 @@ class MooreEnv extends ABMEnv {
     }
 }
 
-const VonNeumanEnv = new MooreEnv().setupEnv({w: 1000, h: 1000, gridType: 'torus'});
+const VonNeumannEnv = new MooreEnv().setupEnv({w: 1000, h: 1000, gridType: 'torus'});
 
 tick();
-let baseline = VonNeumanEnv.eachVonNeuman();
-println("eachVonNeuman "+tick()+" "+baseline);
+let baseline = VonNeumannEnv.eachVonNeumann();
+println("eachVonNeumann "+tick()+" "+baseline);
 
-let count = VonNeumanEnv.VonNeuman();
+let count = VonNeumannEnv.VonNeumann();
 Assertions.assertEquals(baseline,count);
-println("VonNeuman "+tick()+" "+count);
+println("VonNeumann "+tick()+" "+count);
 
-count = VonNeumanEnv.jsEachVonNeuman();
+count = VonNeumannEnv.jsEachVonNeumann();
 Assertions.assertEquals(baseline,count);
-println("jsEachVonNeuman"+tick()+" "+count);
+println("jsEachVonNeumann"+tick()+" "+count);
 
-count = VonNeumanEnv.jsVonNeuman();
+count = VonNeumannEnv.jsVonNeumann();
 Assertions.assertEquals(baseline,count);
-println("jsVonNeuman"+tick()+" "+count);
+println("jsVonNeumann"+tick()+" "+count);
