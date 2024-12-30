@@ -297,7 +297,7 @@ class ABMPatch extends ABMEntity {
      * @param self
      * @returns {[]}
      */
-    VonNeuman(length: Number, self?: Boolean) {
+    VonNeumann(length: Number, self?: Boolean) {
         if (length !== Math.floor(length)) {
             throw "Moore can only be calculated with Integers";
         }
@@ -313,7 +313,7 @@ class ABMPatch extends ABMEntity {
         if (length !== Math.floor(length)) {
             throw "Moore can only be calculated with Integers";
         }
-        return this.grid.eachVonNeuman(this.xValue, this.yValue, length, !self,fx);
+        return this.grid.eachVonNeumann(this.xValue, this.yValue, length, !self,fx);
     }
 
 
