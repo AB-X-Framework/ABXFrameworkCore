@@ -2,27 +2,32 @@ name: GraalVM Workflow
 
 on:
   push:
-    
   pull_request:
 
+permissions:
+  packages: write   # Allows write access to GitHub Packages
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
-    # Step 1: Checkout the code
-    - name: Checkout code
-      uses: actions/checkout@v3
+      # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Graalvm
-      uses: graalvm/setup-graalvm@v1.2.6
-      with:
-        java-version:  '21.0.5'
+      - name: Graalvm
+        uses: graalvm/setup-graalvm@v1.2.6
+        with:
+          java-version:  '21.0.5'
 
-    # Step 3: Verify GraalVM installation
-    - name: Verify GraalVM installation
-      run: |
-        java -version
-        mvn package
+      - name: Settings
+        uses: s4u/maven-settings-action@v2.5.0
+        with:
+          servers: '[{"id": "github","configuration": {"httpHeaders": {"property": {"name": "Authorization","value": "Bearer ${{ secrets.GITHUB_TOKEN }}"}}}}]'
 
+
+      # Step 3: Verify GraalVM installation
+      - name: Compile and deploy ABXRunner
+        run: |
+          mvn package
