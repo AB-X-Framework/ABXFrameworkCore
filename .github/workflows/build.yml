@@ -5,7 +5,7 @@ on:
   pull_request:
 
 permissions:
-  packages: write   # Allows write access to GitHub Packages
+  packages: write     # Allows write access to GitHub Packages
 
 jobs:
   build:
@@ -26,8 +26,7 @@ jobs:
         with:
           servers: '[{"id": "github","configuration": {"httpHeaders": {"property": {"name": "Authorization","value": "Bearer ${{ secrets.GITHUB_TOKEN }}"}}}}]'
 
-
       # Step 3: Verify GraalVM installation
-      - name: Compile and deploy ABXRunner
+      - name: Compile and deploy ABX Framework Core
         run: |
-          mvn package
+          mvn deploy
